@@ -1,6 +1,2 @@
-# KinectDoctor
-## Copyright
+KinectDoctor
 
-Copyright (C) 2016 QG Studio
-
-All rights reserved.
