@@ -17,6 +17,7 @@ import java.util.ArrayList;
  */
 public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder> implements View.OnClickListener {
 
+    //
     private ArrayList<MedicalRecord> medicalRecordList;
     private Context mContext;
 
