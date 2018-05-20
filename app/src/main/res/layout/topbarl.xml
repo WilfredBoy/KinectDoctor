@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/left_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            tools:src="@drawable/back_selector"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/right_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            tools:src="@drawable/person_info_selector"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/center_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/color_white"
+            tools:text="测试"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/right_iv"
+            android:layout_toRightOf="@id/left_iv"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/BaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/base_color</item>
+        <item name="colorPrimaryDark">@color/base_color</item>
+        <item name="colorAccent">@color/add_color</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/base_color</item>
+        <item name="colorPrimaryDark">@color/base_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="style_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>移除边框
+        <item name="android:windowNoTitle">true</item>去除顶部标题栏
+        <item name="android:windowIsTranslucent">true</item>窗体透明
+        <item name="android:background">@android:color/transparent</item>背景透明
+        <item name="android:windowBackground">@android:color/transparent</item>窗体背景透明
+        <item name="android:windowIsFloating">false</item>窗体是否浮动
+        <item name="android:backgroundDimEnabled">true</item>背景是否昏暗
+        <item name="android:backgroundDimAmount">0.6</item>昏暗数量
+    </style>
+
+    <style name="ToolbarRightText">
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">16.5dp</item>
+    </style>
+
+</resources>

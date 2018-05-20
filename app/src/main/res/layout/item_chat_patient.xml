@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_chat_patient"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <Button
+        android:id="@+id/patient_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/patient_voice_normal"
+        android:layout_centerVertical="true"
+        tools:text=""
+        android:singleLine="true"
+        android:maxEms="15"/>
+
+    <TextView
+        android:id="@+id/p_time_length_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/patient_voice_btn"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/patient_voice_btn"
+        android:textSize="12dp"
+        tools:text="45''"/>
+</RelativeLayout>

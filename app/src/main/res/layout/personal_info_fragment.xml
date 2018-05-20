@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qg.kinectdoctor.ui.information.PersonalInfoFragment">
+
+    <com.qg.kinectdoctor.view.ToolbarT
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size"
+        android:background="@drawable/colorful_topbar_bg"
+        app:title="@string/my_info"
+        app:titleTextColor="@android:color/white">
+    </com.qg.kinectdoctor.view.ToolbarT>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#29a59b"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_marginTopPercent="4.3%"
+        tools:text="陈医生"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#29a59b"
+        android:textSize="12dp"
+        android:visibility="gone"
+        app:layout_marginTopPercent="6.34%"
+        tools:text="32, 皮肤科"
+        tools:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/base_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_marginTopPercent="7.89%"
+        android:layout_below="@id/info"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/base_info_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/base_info"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/to"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_grey2"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/job_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/base_info"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/job_info_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/job_info"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/to"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_grey2"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/account_manage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_marginTopPercent="2.42%"
+        android:layout_below="@id/job_info"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_manage_icon"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_manage"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/to"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_grey2"/>
+
+    </FrameLayout>
+
+</android.support.percent.PercentRelativeLayout>

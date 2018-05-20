@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/unread_tv"
+        android:layout_width="30dp"
+        android:layout_height="18dp"
+        android:background="@drawable/unread_shape"
+        tools:text="1"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"/>
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:text="病人姓名"
+        android:textSize="18dp"
+        android:layout_toLeftOf="@id/unread_tv"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_grey2"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

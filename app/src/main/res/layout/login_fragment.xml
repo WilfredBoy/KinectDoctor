@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.qg.kinectdoctor.ui.login.LoginFragment">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_account"
+        android:textColor="#F7F7F7"
+        android:textSize="11dp"
+        app:layout_marginBottomPercent="1.33%"/>
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/login_btn"
+        app:layout_marginBottomPercent="21.5%"/>
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/login_input_bg"
+        android:padding="8dp"
+        android:textSize="10dp"
+        android:maxLength="11"
+        android:inputType="phone"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginLeftPercent="15.8%"
+        app:layout_marginStartPercent="15.8%"
+        app:layout_marginTopPercent="45.625%"
+        app:layout_widthPercent="62.5%"/>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phone_input"
+        android:background="@drawable/login_input_bg"
+        android:padding="8dp"
+        android:textSize="10dp"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginLeftPercent="15.8%"
+        app:layout_marginStartPercent="15.8%"
+        app:layout_marginTopPercent="8.13%"
+        app:layout_widthPercent="62.5%"/>
+
+
+    <ImageView
+        android:id="@+id/see_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_input"
+        android:layout_alignStart="@+id/password_input"
+        android:layout_alignTop="@+id/password_input"
+        android:src="@drawable/see_pwd"
+        app:layout_marginLeftPercent="54.31%"
+        app:layout_marginStartPercent="54.31%"
+        app:layout_marginTopPercent="2.42%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone_input"
+        android:text="@string/phone_number"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="6.34%"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password_input"
+        android:text="@string/password"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="6.34%"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"/>
+
+    <CheckBox
+        android:id="@+id/rmb_pwd_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/password_input"
+        android:background="@null"
+        android:button="@drawable/remember_pwd_checkbox"
+        android:checked="true"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"
+        app:layout_marginTopPercent="7%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rmb_pwd_cb"
+        android:layout_alignLeft="@+id/rmb_pwd_cb"
+        android:layout_alignStart="@+id/rmb_pwd_cb"
+        android:text="@string/remember_password"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="0.6%"
+        app:layout_marginLeftPercent="4.17%"
+        app:layout_marginStartPercent="4.17%"/>
+
+</android.support.percent.PercentRelativeLayout>

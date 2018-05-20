@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_chat_doctor"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+>
+
+    <Button
+        android:id="@+id/doctor_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/doctor_voice_normal"
+        tools:text=""
+        android:maxEms="15"/>
+
+    <TextView
+        android:id="@+id/d_time_length_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/doctor_voice_btn"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/doctor_voice_btn"
+        android:textSize="12dp"
+        tools:text="45''" />
+</RelativeLayout>
+

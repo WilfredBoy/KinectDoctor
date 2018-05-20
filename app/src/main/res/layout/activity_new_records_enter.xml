@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <com.qg.kinectdoctor.view.TopbarZ
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.qg.kinectdoctor.view.TopbarZ>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:hint="@string/please_enter"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg_2"
+    tools:context="com.qg.kinectdoctor.ui.login.LoginFragment">
+
+    <ImageButton
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/finish_btn"
+        app:layout_marginBottomPercent="21.5%"/>
+
+    <EditText
+        android:id="@+id/hospital_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/login_input_bg"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="10dp"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginLeftPercent="15.8%"
+        app:layout_marginStartPercent="15.8%"
+        app:layout_marginTopPercent="43.13%"
+        app:layout_widthPercent="62.5%"/>
+
+    <EditText
+        android:id="@+id/clinic_department_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hospital_input"
+        android:background="@drawable/login_input_bg"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="10dp"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginLeftPercent="15.8%"
+        app:layout_marginStartPercent="15.8%"
+        app:layout_marginTopPercent="4.84%"
+        app:layout_widthPercent="62.5%"/>
+
+    <ImageView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/clinic_department_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clinic_department_input"
+        android:layout_alignStart="@+id/clinic_department_input"
+        android:layout_alignTop="@+id/clinic_department_input"
+        android:src="@drawable/login_spinner"
+        app:layout_marginLeftPercent="57.21%"
+        app:layout_marginStartPercent="57.21%"
+        app:layout_marginTopPercent="2.45%"/>
+
+    <EditText
+        android:id="@+id/job_title_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/clinic_department_input"
+        android:background="@drawable/login_input_bg"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="10dp"
+        app:layout_heightPercent="6.25%"
+        app:layout_marginLeftPercent="15.8%"
+        app:layout_marginStartPercent="15.8%"
+        app:layout_marginTopPercent="4.84%"
+        app:layout_widthPercent="62.5%"/>
+
+    <ImageView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/job_title_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/job_title_input"
+        android:layout_alignStart="@+id/job_title_input"
+        android:layout_alignTop="@+id/job_title_input"
+        android:src="@drawable/login_spinner"
+        app:layout_marginLeftPercent="57.21%"
+        app:layout_marginStartPercent="57.21%"
+        app:layout_marginTopPercent="2.45%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hospital_input"
+        android:text="@string/hospital"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="6.34%"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clinic_department_input"
+        android:text="@string/clinic_department"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="6.34%"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/job_title_input"
+        android:text="@string/job_title"
+        android:textColor="#393939"
+        android:textSize="10dp"
+        app:layout_marginBottomPercent="6.34%"
+        app:layout_marginLeftPercent="17.64%"
+        app:layout_marginStartPercent="17.64%"/>
+
+</android.support.percent.PercentRelativeLayout>

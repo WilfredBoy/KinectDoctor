@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <include
+        layout="@layout/item_chat_time"/>
+    <include
+        layout="@layout/item_chat_doctor"/>
+    <include
+        layout="@layout/item_chat_patient" />
+</FrameLayout>
